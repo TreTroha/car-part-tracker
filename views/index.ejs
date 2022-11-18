@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pricing App</title>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1>The Build Sheet</h1>
+                <h3>A parts list for the ambitious car nerds</h3>
+            </header>
+
+            <main>
+                <h2>Keep track of your build by adding parts:</h2>
+                <ul class="rappers">
+                <% for(let i=0; i < info.length; i++) {%>
+                    <li class="rapper">
+                        <span><%= info[i].partName %></span>
+                        <span><%= info[i].partPrice %></span>
+                        <span><%= info[i].likes %></span>
+                        <span class='fa fa-arrow-up'></span>
+                        <span class='fa fa-trash'></span>
+                    </li>
+                <% } %>
+                </ul>
+
+                <form action="/addPart" method="POST">
+                    <input type="text" placeholder="What Part" name="partName">
+                    <input type="text" placeholder="Part Price" name="partPrice">
+                    <input type="submit" id="submit">
+                </form>
+            </main>
+
+            <!-- <footer>
+                Footer
+            </footer> -->
+        </div>
+        
+
+        <script src='js/main.js'></script>
+    </body>
+</html>
