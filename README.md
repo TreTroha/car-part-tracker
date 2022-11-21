@@ -1,5 +1,5 @@
 # Car Part Tracker
-This is a car part tracked CRUD app built as a passion project to help me keep track of the project car I have.
+This is a car part tracker CRUD app built as a passion project to help me keep track of the project car I have.
 
 ![localhost_8000_](https://user-images.githubusercontent.com/116237761/202632771-12d2ba1c-d8c9-40f6-9c3a-552f6f6debab.png)
 
